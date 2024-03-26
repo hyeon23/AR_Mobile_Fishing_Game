@@ -31,27 +31,27 @@ public class BtnClickListeners : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "FirstScene")
         {
             //GameBtn.onClick.AddListener( delegate { GameBtnClicked(); });
-            NFTBtn.onClick.AddListener( delegate { NFTBtnClicked(); });
+            NFTBtn.onClick.AddListener(NFTBtnClicked);
         }
         else if(SceneManager.GetActiveScene().name == "DetectScene")
         {
-            MenuBtn.onClick.AddListener(delegate { MenuBtnClicked(); });
-            ShopBtn.onClick.AddListener(delegate { ShopBtnClicked(); });
-            InventoryBtn.onClick.AddListener(delegate { InventoryBtnClicked(); });
-            DictionaryBtn.onClick.AddListener(delegate { DictionaryBtnClicked(); });
-            CastingBtn.onClick.AddListener(delegate { CastBtnClicked(); });
+            MenuBtn.onClick.AddListener(MenuBtnClicked);
+            ShopBtn.onClick.AddListener(ShopBtnClicked);
+            InventoryBtn.onClick.AddListener(InventoryBtnClicked);
+            DictionaryBtn.onClick.AddListener(DictionaryBtnClicked);
+            CastingBtn.onClick.AddListener(CastBtnClicked);
         }
         else if(SceneManager.GetActiveScene().name == "Inventory")
         {
-            BackBtn.onClick.AddListener(delegate { BackBtnClicked(); });
+            BackBtn.onClick.AddListener(BackBtnClicked);
         }
         else if (SceneManager.GetActiveScene().name == "ShopScene")
         {
-            BackBtn.onClick.AddListener(delegate { BackBtnClicked(); });
+            BackBtn.onClick.AddListener(BackBtnClicked);
         }
         else if (SceneManager.GetActiveScene().name == "CollectionScene")
         {
-            BackBtn.onClick.AddListener(delegate { BackBtnClicked(); });
+            BackBtn.onClick.AddListener(BackBtnClicked);
         }
     }
 

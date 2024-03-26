@@ -32,7 +32,6 @@ public class UserData
     public int rank_score;
     /// <summary> User의 현재 등수</summary>
     public int rank;
-
     public UserData()
     {
         fishNums = new int[Fish.totalNum];
@@ -43,8 +42,9 @@ public class UserData
     }
 
     /// <summary>
-    /// 도감의 정보를 기반으로 Score를 계산하여 반환하는 함수
+    /// 아이런
     /// </summary>
+    /// <returns>망할</returns>
     public int GetRankScore()
     {
         int score = 0;
@@ -189,6 +189,7 @@ public class SaveCtrl : MonoBehaviour
         myData.rank = int.Parse(BRO.GetReturnValuetoJSON()["rows"][0]["rank"]["N"].ToString());
 
         Param param = new Param();
+        
         SettingPublicParam(param);
         BRO = Backend.GameData.Update("userData_public", myData.public_inDate, param);
         if (!BRO.IsSuccess())
